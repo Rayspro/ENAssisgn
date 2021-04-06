@@ -48,6 +48,7 @@ function Login({ loading, LoginAction, DefaultLoginAction, login, history }) {
           name="password"
           value={user.password}
           change={inputController}
+          type="password"
           placeholder="Enter your Password"
         />
         <Button click={initLogin} text="Login" load={load} />

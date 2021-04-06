@@ -10,6 +10,8 @@ async function Login(req, res) {
       await compareHash(password, user.password);
       if (!!user) {
         const token = await jwtGenrate(user);
+        user.token = token;
+        await user.save()
         res
           .status(200)
           .send({

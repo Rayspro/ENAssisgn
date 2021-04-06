@@ -11,14 +11,18 @@ import {
   INIT_UPDATE_USER,
 } from "../type";
 
-const header = {
-  headers: {
-    token: localStorage.getItem("token"),
-  },
-};
+
 
 export const ListUserAction = (page = 1) => async (dispatch) => {
   try {
+
+    const token = await localStorage.getItem("token")
+
+    const header = {
+      headers: {
+        token: token
+      },
+    };
     dispatch({
       type: INIT_LIST_USER,
     });
@@ -41,6 +45,13 @@ export const ListUserAction = (page = 1) => async (dispatch) => {
 };
 
 export const AddUser = (user) => async (dispatch) => {
+  const token = await localStorage.getItem("token")
+
+  const header = {
+    headers: {
+      token: token
+    },
+  };
   try {
     dispatch({
       type: INIT_LIST_USER,
@@ -64,6 +75,13 @@ export const AddUser = (user) => async (dispatch) => {
 };
 
 export const DeleteUser = (id) => async (dispatch) => {
+  const token = await localStorage.getItem("token")
+
+  const header = {
+    headers: {
+      token: token
+    },
+  };
   try {
     dispatch({
       type: INIT_LIST_USER,
@@ -84,6 +102,13 @@ export const DeleteUser = (id) => async (dispatch) => {
 };
 
 export const UpdateUser = (user) => async (dispatch) => {
+  const token = await localStorage.getItem("token")
+
+  const header = {
+    headers: {
+      token: token
+    },
+  };
   try {
     dispatch({
       type: INIT_UPDATE_USER,

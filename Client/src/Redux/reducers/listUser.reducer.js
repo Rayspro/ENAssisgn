@@ -19,7 +19,7 @@ const userSch = {
 };
 
 const initailState = {
-  user: null,
+  user: [],
   loading: false,
   err: false,
   totalPage: "0",
