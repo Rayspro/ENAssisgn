@@ -1,0 +1,67 @@
+.all-root {
+    min-height: 80vh;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.top-header button {
+    width: 100px;
+    padding: 10px 5px;
+    border-width: 1px;
+    border-color: white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    
+}
+
+.delete {
+    background-color: #a50000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modify {
+    background-color: #05ad1b;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slide-root-active {
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+}
+.slide-root-active input{
+    height: 30px;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.slide-root-disable {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}

@@ -1,0 +1,25 @@
+.input-root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.input-root > input{
+    flex:1;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-style: none;
+    text-align: center;
+}
+
+.input-root > input:focus{
+    outline-style: none;
+}

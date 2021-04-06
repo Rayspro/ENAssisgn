@@ -1,0 +1,52 @@
+.add-root input{
+    height: 35px;
+    width: 300px;
+    margin: 10px;
+}
+
+.add-root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.add-root div{
+    display: flex;
+    flex-direction: column;
+}
+
+.addUser{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.add-root .switch{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 200px;
+    margin: auto;
+    border-style: solid;
+}
+
+.add-root .switch .sw-active{
+    flex: 1;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+
+.add-root .switch .sw{
+    flex: 1;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+}

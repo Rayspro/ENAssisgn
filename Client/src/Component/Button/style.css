@@ -1,0 +1,13 @@
+.btn-hover {
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 100ms linear;
+}
+
+.btn-hover:hover {
+    transform: scale(1.05);
+}

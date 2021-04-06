@@ -1,0 +1,36 @@
+.header-root {
+    min-height: 100vh;
+}
+
+.header {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header > ul > li {
+    float: left;
+    margin: 10px;
+    color: thistle;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active {
+    background-color: rgb(31, 29, 29);
+    font-weight: 600;
+}
+
+.disable {
+    background-color: transparent;
+}
